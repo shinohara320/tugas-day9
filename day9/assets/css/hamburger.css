@@ -1,0 +1,43 @@
+.hamburger-nav-container {
+    margin: 0 auto;
+    font-size: 23px;
+    display: none;
+    width: 400px;
+}
+
+.hamburger-nav-container .hamburger-active {
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+}
+
+.hamburger-nav-container a {
+    color: rgb(68,68,68);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+}
+#barsmenu {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .nav-left ul li a{
+        display: none;
+    }
+    html, body{
+        height: 100%;
+        width: 900px;
+    }
+    #barsmenu {
+        display: block;
+    }
+    .nav-right a{
+        margin-right: 0;
+    }
+    .nav-right{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

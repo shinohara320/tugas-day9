@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/testimoni.css"> 
+    <link rel="stylesheet" href="./assets/css/hamburger.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>My Card</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img style="height: 35px; width: 51px;" src="./assets/images/brandred.png" alt="">
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+                <li>
+                    <a href="testimoni.html">Testimoni</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <a href="./contactForm.html">Contact Me</a>
+            </ul>
+            <div id="barsmenu" style="margin-right: 10px;">
+                <button style="background-color: transaparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="myProject.html">My Project</a>
+        <a href="contactForm.html">Contact Me</a>
+        <a href="testimoni.html"  class="hamburger-active">Testimoni</a>
+    </div>
+    <div class="button-rating">
+        <button class="btn-rating" onclick="getAllTestimonialData()">ALL</button>
+        <button class="btn-rating" onclick="getFilteredTestimonials(5)"> 
+            <i class="fa-solid fa-star"> 5</i> </button>
+        <button class="btn-rating" onclick="getFilteredTestimonials(4)"> 
+            <i class="fa-solid fa-star"> 4</i> </button>
+        <button class="btn-rating" onclick="getFilteredTestimonials(3)"> 
+            <i class="fa-solid fa-star"> 3</i> </button>
+        <button class="btn-rating" onclick="getFilteredTestimonials(2)"> 
+            <i class="fa-solid fa-star"> 2</i> </button>
+        <button class="btn-rating" onclick="getFilteredTestimonials(1)"> 
+            <i class="fa-solid fa-star"> 1</i> </button>
+    </div>
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <section class="testimonials" id="testimonials">
+            <!-- 
+                this where testimonials shows
+             -->
+        </section>
+        </div>
+<script src="./assets/js/hamburger.js"></script>
+<script src="./assets/js/ajax.js"></script>
+</body>
+</html>

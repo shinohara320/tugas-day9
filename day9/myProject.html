@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/project.css">
+    <link rel="stylesheet" href="./assets/css/hamburger.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+        <ul>
+            <li>
+                <img style="height: 35px; width: 51px;" src="./assets/images/brandred.png" alt="">
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="myProject.html">My Project</a>
+            </li>
+            <li>
+                <a href="testimoni.html">Testimoni</a>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <ul>
+            <a href="./contactForm.html">Contact Me</a>
+        </ul>
+        <div id="barsmenu" style="margin-right: 10px;">
+            <button style="background-color: transaparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="myProject.html" class="hamburger-active">My Project</a>
+        <a href="contactForm.html">Contact Me</a>
+        <a href="testimoni.html">Testimoni</a>
+    </div>
+    <!-- form project -->
+    <h1 style="font-weight: 800; text-align: center;font-size: 30px;">ADD PROJECT</h1>
+    <form action="" onsubmit="getData(event)">
+      <div class="input-name">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+      </div>
+      <div class="date">
+        <div class="input-date-start">
+          <label for="input-date-start">Start Date</label>
+          <input type="date" id="input-date-start">
+        </div>
+        <div class="input-name-end">
+          <label for="input-date-end">End Date</label>
+          <input type="date" id="input-date-end">
+        </div>
+      </div>
+      <div class="desc">
+        <label for="description">Text Area</label>
+        <textarea name="" id="description"></textarea>
+      </div>
+      <div class="technology">
+        <label>Technology</label>
+        <div class="label">
+          <div>
+            <div class="logos">
+              <div>
+                <input type="checkbox" name="tech" id="nodejs">
+              </div>
+              <div>
+                <label for="nodejs"> Node JS</label>
+              </div>
+            </div>
+            <div class="logos">
+              <div>
+                <input type="checkbox" name="tech" id="reactjs">
+              </div>
+              <div>
+                <label for="reactjs"> React JS</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="logos">
+              <div>
+                <input type="checkbox" name="tech" id="nextjs">
+              </div>
+              <div>
+                <label for="nextjs"> Next JS</label>
+              </div>
+            </div>
+            <div class="logos">
+              <div>
+                <input type="checkbox" name="tech" id="typescript">
+              </div>
+              <div>
+                <label for="typescript"> Typescript</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <label>Upload Image</label>
+        <div class="input-image-group">
+          <label for="input-image">
+            <p>Attach File</p>
+            <img src="./assets/images/file.png" alt="file" />
+          </label>
+          <input type="file" name="image" id="input-image" style="visibility: hidden;">
+        </div>
+      </div>
+      <div class="submit-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <!-- mini card -->
+    <h1 style="font-weight: 800; text-align: center;font-size: 30px;">MY PROJECT</h1>
+    <div id="contents" class="project-container">
+      <div class="container">
+        <div class="upper">
+          <div class="image">
+          <img src="./assets/images/brandred.png" alt="">
+          </div>
+          <h1><a href="project-detail.html">
+            Patlabor
+          </a></h1>
+          <p>Durasi : ... Hari</p>
+          <p>A mechanised police force investigates when 
+            terrorists incite civil war in 2002 Japan.</p>
+        </div>
+        <div class="detail">
+        </div>
+        <div class="icons">
+          <img src="./assets/images/icons/nextjs.png" style="width: 15%;" alt="">
+        </div>
+        <div class="button">
+          <button>edit</button>
+          <button>delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+<script src="./assets/js/hamburger.js"></script>
+<script src="./assets/js/project.js"></script>
+</body>
+</html>
